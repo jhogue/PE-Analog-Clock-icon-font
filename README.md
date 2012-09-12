@@ -29,6 +29,8 @@ The font file contains glyphs for hours and minutes. The glyphs for the hours co
 
 The <code>&lt;span&gt;</code> for the minute hand is nested inside of the hour. The hour has <code>position: relative</code> while the minute has <code>position: absolute</code>. In this way, they can overlap each other to create a clock face and represent many different combinations of hour and minute. 
 
+More information and samples in the <strong>index.htm</strong> file. 
+
 
 <h2>Browser Support</h2>
 Browsers need to support <code>@font-face</code> as well as <code>:before</code> pseudo-elements. This font and CSS has been tested in:
