@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+<head>
+<title>Project Evolution Analog Clock Icon Font</title>
+<link rel="stylesheet" href="pe-analogclock.css" />
+<style>
+	section, header, article, footer { display: block; }
+	body {
+		font-family: sans-serif;
+		color: #444;
+		line-height: 1.5;
+		font-size: 1em;
+	}
+	* {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	code {
+    	font-size: 1.2em; 
+    	color: #294; 
+	}
+	.php {
+    	color: #c33; 
+	}
+	h1, h2, h3, h4, h5 {
+    	margin-top: 1.25em; 
+    	margin-bottom: .5em; 
+	}
+	p, ul, ol {
+    	margin-bottom: .75em; 
+	}
+	ul, ol {
+    	margin-left: 1.5em; 
+	}
+	.half {
+    	float: left; 
+    	width: 49%; 
+	}
+	.w-main {
+		width: 80%;
+	}
+	.centered {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	header {
+		margin: 2em 0;
+		padding-bottom: .5em;
+		color: #666;
+		box-shadow: 0 2px #eee;
+	}
+	header h1 {
+		font-size: 2em;
+		font-weight: normal;
+	}
+	.clearfix:before, .clearfix:after { content: ""; display: table; }
+	.clearfix:after, .clear { clear: both; }
+	footer {
+		margin-top: 2em;
+		padding: .5em 0;
+		box-shadow: 0 -2px #eee;
+	}
+	a, a:visited {
+		color: #B35047;
+		text-decoration: none;
+	}
+	a:hover, a:focus {color: #000;}
+	.timestamp {
+		display: inline-block;
+		width: 11.5em;
+		padding: .5em .75em .4em;
+		background: #ddd;
+		margin: 0 .75em .75em 0;
+		-webkit-border-radius: 4px; 
+		-moz-border-radius: 4px; 
+		-ms-border-radius: 4px; 
+		-o-border-radius: 4px; 
+		border-radius: 4px; 
+	}
+	.timestamp time {
+    	font-size: 1.5em; 
+    	text-shadow: 0 1px 2px rgba( 255,255,255,0.9 ); 
+	}
+	.timestamp time span {
+    	color: #888;  
+	}
+	.timestamp time span span {
+    	text-shadow: none; 
+	}
+</style>
+</head>
+<body>
+	
+	<div class="w-main centered">
+    	<section class="mtm clearfix" id="glyphs">
+        	<header>
+        		<h1>Project Evolution Analog Clock Icon Font</h1>
+        	</header>
+        	
+        	<article>
+            	<p>The Analog Clock icon set allows <code>&lt;time&gt;</code> elements to have a visual notation in a simple, progressive way using a @font-face to deliver a custom font for the clock face. The icon is therefore scalable and can be styled with CSS to match most site designs. </p>
+        		<p>The required HTML can be implemented server-side in any application to output the desired icons. Optionally, for users that do not have server-side access, a jQuery plug-in can sniff out <code>&lt;time&gt;</code> elements and add the HTML necessary for the icon set. Both options are documented here and can be modified to fit specific situations. </p>
+        		<p>The CSS uses <code>:before</code> pseudo elements to place the icons, therefore, there is no extraneous HTML content present when the <code>:before</code> element is not supported. Graceful fallback to the contents of the <code>&lt;time&gt;</code> element.</p>
+        		<p><strong>Supports:</strong></p>
+                <ul>
+                    <li>Military time</li>
+                    <li>Overlapping digit notations: <code>hour-00</code>, <code>hour-24</code>, <code>minute-00</code>, <code>minute-60</code>
+                    <li>Single digit hour values: <code>hour-01</code> as well as <code>hour-1</code></li>
+                </ul>
+                
+        	</article>
+        	
+    	</section>
+    	
+    	<h2>Default configuration, showing all 59 minutes</h2>
+        
+        <div class="timestamp">
+            <time datetime="2012-03-15 3:00:00"><span class="hour-3"><span class="minute-00"></span></span> 3:00pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 3:01:00"><span class="hour-3"><span class="minute-01"></span></span> 3:01pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 3:02:00"><span class="hour-3"><span class="minute-02"></span></span> 3:02pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 3:03:00"><span class="hour-3"><span class="minute-03"></span></span> 3:03pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 3:04:00"><span class="hour-3"><span class="minute-04"></span></span> 3:04pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 3:05:00"><span class="hour-3"><span class="minute-05"></span></span> 3:05pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 4:06:00"><span class="hour-4"><span class="minute-06"></span></span> 4:06pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 4:07:00"><span class="hour-4"><span class="minute-07"></span></span> 4:07pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 4:08:00"><span class="hour-4"><span class="minute-08"></span></span> 4:08pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 4:09:00"><span class="hour-4"><span class="minute-09"></span></span> 4:09pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 4:10:00"><span class="hour-4"><span class="minute-10"></span></span> 4:10pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 5:11:00"><span class="hour-5"><span class="minute-11"></span></span> 5:11pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 5:12:00"><span class="hour-5"><span class="minute-12"></span></span> 5:12pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 5:13:00"><span class="hour-5"><span class="minute-13"></span></span> 5:13pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 5:14:00"><span class="hour-5"><span class="minute-14"></span></span> 5:14pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 5:15:00"><span class="hour-5"><span class="minute-15"></span></span> 5:15pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 6:16:00"><span class="hour-6"><span class="minute-16"></span></span> 6:16pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 6:17:00"><span class="hour-6"><span class="minute-17"></span></span> 6:17pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 6:18:00"><span class="hour-6"><span class="minute-18"></span></span> 6:18pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 6:19:00"><span class="hour-6"><span class="minute-19"></span></span> 6:19pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 6:20:00"><span class="hour-6"><span class="minute-20"></span></span> 6:20pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 7:21:00"><span class="hour-7"><span class="minute-21"></span></span> 7:21pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 7:22:00"><span class="hour-7"><span class="minute-22"></span></span> 7:22pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 7:23:00"><span class="hour-7"><span class="minute-23"></span></span> 7:23pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 7:24:00"><span class="hour-7"><span class="minute-24"></span></span> 7:24pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 7:25:00"><span class="hour-7"><span class="minute-25"></span></span> 7:25pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 8:26:00"><span class="hour-8"><span class="minute-26"></span></span> 8:26pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 8:27:00"><span class="hour-8"><span class="minute-27"></span></span> 8:27pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 8:28:00"><span class="hour-8"><span class="minute-28"></span></span> 8:28pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 8:29:00"><span class="hour-8"><span class="minute-29"></span></span> 8:29pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 8:30:00"><span class="hour-8"><span class="minute-30"></span></span> 8:30pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 9:31:00"><span class="hour-9"><span class="minute-31"></span></span> 9:31pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 9:32:00"><span class="hour-9"><span class="minute-32"></span></span> 9:32pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 9:33:00"><span class="hour-9"><span class="minute-33"></span></span> 9:33pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 9:34:00"><span class="hour-9"><span class="minute-34"></span></span> 9:34pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 9:35:00"><span class="hour-9"><span class="minute-35"></span></span> 9:35pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 10:36:00"><span class="hour-10"><span class="minute-36"></span></span> 10:36pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 10:37:00"><span class="hour-10"><span class="minute-37"></span></span> 10:37pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 10:38:00"><span class="hour-10"><span class="minute-38"></span></span> 10:38pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 10:39:00"><span class="hour-10"><span class="minute-39"></span></span> 10:39pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 10:40:00"><span class="hour-10"><span class="minute-40"></span></span> 10:40pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 11:41:00"><span class="hour-11"><span class="minute-41"></span></span> 11:41pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 11:42:00"><span class="hour-11"><span class="minute-42"></span></span> 11:42pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 11:43:00"><span class="hour-11"><span class="minute-43"></span></span> 11:43pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 11:44:00"><span class="hour-11"><span class="minute-44"></span></span> 11:44pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 11:45:00"><span class="hour-11"><span class="minute-45"></span></span> 11:45pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 12:46:00"><span class="hour-12"><span class="minute-46"></span></span> 12:46pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 12:47:00"><span class="hour-12"><span class="minute-47"></span></span> 12:47pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 12:48:00"><span class="hour-12"><span class="minute-48"></span></span> 12:48pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 12:49:00"><span class="hour-12"><span class="minute-49"></span></span> 12:49pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 12:50:00"><span class="hour-12"><span class="minute-50"></span></span> 12:50pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 13:51:00"><span class="hour-13"><span class="minute-51"></span></span> 13:51pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 13:52:00"><span class="hour-13"><span class="minute-52"></span></span> 13:52pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 13:53:00"><span class="hour-13"><span class="minute-53"></span></span> 13:53pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 13:54:00"><span class="hour-13"><span class="minute-54"></span></span> 13:54pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 13:55:00"><span class="hour-13"><span class="minute-55"></span></span> 13:55pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 14:56:00"><span class="hour-14"><span class="minute-56"></span></span> 14:56pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 14:57:00"><span class="hour-14"><span class="minute-57"></span></span> 14:57pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 14:58:00"><span class="hour-14"><span class="minute-58"></span></span> 14:58pm</time>
+        </div>
+        <div class="timestamp">
+            <time datetime="2012-03-15 14:59:00"><span class="hour-14"><span class="minute-59"></span></span> 14:59pm</time>
+        </div>
+        
+    	
+    	<section>
+            <article>
+                <h2>Browser Support</h2>
+                <p>Browsers need to support <code>@font-face</code> as well as <code>:before</code> pseudo-elements. This font and CSS has been tested in:</p>
+                <div class="half">
+                    <h3>Windows browsers</h3>
+                    <ul>
+                        <li>IE 8 and above</li>
+                        <li>Firefox 3.6 and above</li>
+                        <li>Safari 4.0 and above</li>
+                        <li>Chrome 14.0 and above</li>
+                        <li>Opera 11.1 and above</li>
+                    </ul>
+                </div>
+                <div class="half">
+                    <h3>Mac browsers (Snow Leopard)</h3>
+                    <ul>
+                        <li>Firefox 3.6 and above</li>
+                        <li>Safari 4.0 and above</li>
+                        <li>Chrome 14.0 and above</li>
+                        <li>Opera 11.1 and above</li>
+                    </ul>
+                </div>
+                <div class="half" style="clear: both;">
+                    <h3>iOS</h3>
+                    <ul>
+                        <li>iPhone 4S (iOS 5.1) and above</li>
+                    </ul>
+                </div>
+                <div class="half">
+                    <h3>Android</h3>
+                    <ul>
+                        <li>Android 4.0.3 and above on most devices</li>
+                    </ul>
+                </div>
+                
+                <hr style="clear: both;">
+                
+                <h2>How it Works</h2>
+                <p>The font file contains glyphs for hours and minutes. The glyphs for the hours contains the circle outline as well. To cut down on the number of glyphs needed for minutes, the font contains a glyph for every third minute (3, 6, 9, 12, 15, etc...) which hits the quarter hours perfectly. We also decided that at most sizes, a difference of three minutes is all most people will recognize. For browsers that support CSS3 for <code>transform: rotate()</code> every position for the minute hand is represented. </p>
+                <p>The <code>&lt;span&gt;</code> for the minute hand is nested inside of the hour. The hour has <code>position: relative</code> while the minute has <code>position: absolute</code>. In this way, they can overlap each other to create a clock face and represent many different combinations of hour and minute. </p>
+                
+                <hr>
+                
+                <h2>Usage</h2>
+                <p>For manual usage, markup should follow this pattern. The <code>&lt;span&gt;</code>s are also the output of the jQuery plug-in: </p>
+                
+                <pre>
+<code>&lt;time datetime="2012-03-15 10:36:00"&gt;
+    &lt;span class="hour-10"&gt;
+        &lt;span class="minute-36"&gt;&lt;/span&gt;
+    &lt;/span&gt; 10:36pm
+&lt;/time&gt;</code>
+                </pre>
+            
+                <p>Usage in PHP with <code class="php">date()</code> code in place might look like this:</p>
+                
+                <pre>
+<code>&lt;time datetime="<span class="php">&lt;?php echo date('c') ?&gt;</span>"&gt;
+    &lt;span class="hour-<span class="php">&lt;?php echo date('H') ?&gt;</span>"&gt;
+        &lt;span class="minute-<span class="php">&lt;?php echo date('i') ?&gt;</span>"&gt;&lt;/span&gt;
+    &lt;/span&gt; <span class="php">&lt;?php echo date('g:ia') ?&gt;</span>
+&lt;/time&gt;</code>
+                </pre>
+                
+                <p>Of course, you'd want to apply <code class="php">date()</code> to a variable representing the current element&rsquo;s timestamp, but you get the idea.</p>
+                
+                <hr>
+                
+                <h2>Run on <code>&lt;time&gt;</code> elements with jQuery</h2>
+                <p>If you do not have access to your server-side code or don&rsquo;t know how to add this markup to your site, you may want to implement these icons with a little bit of jQuery. As long as HTML5 <code>time</code> elements are present with the <code>datetime</code> attribute, this code should work. See below:</p>
+                
+                <div id="test-js">
+                    <div class="timestamp">
+                        <time datetime="2012-03-15 11:32:00">11:32am</time>
+                    </div>
+                    <div class="timestamp">
+                        <!-- Note, this string is invalid - the hour should have a leading zero. But the code will still work. -->
+                        <time datetime="2012-03-15 1:15:00">1:15pm</time>
+                    </div>
+                    <div class="timestamp">
+                        <time datetime="2012-03-15 17:57:00">5:57pm</time>
+                    </div>
+                </div>
+                
+                <p><em>Wishlist:</em> a vanilla JS script to do this independent of any library. We are dealing with <code>datetime</code> formatting, which should be consistent, so <code>substr</code> methods are acceptable. </p>
+                
+                <hr>
+                
+                <h2>Installation</h2>
+                <p>Be sure to use the CSS file and change the path to the font files if needed in the <code>&lt;@font-face&gt;</code> rules. If using the jQuery file, be sure to link to it from your document and include a jQuery library (version 1.4.2 or greater). </p>
+                
+                <hr>
+                
+                <h2>Known issues</h2>
+                <ul>
+                    <li>Because the minute hand and hour hands are separate elements, absolute positioning is needed. Alignment of the hands is best controlled by adjusting the line-height. Our CSS includes a line-height that we have seen work well across browsers, but your stylesheet may require some adjustment to our supplied line-height values for proper alignment. </li>
+                    <li>The icons are font-characters, so CSS rules can style the elements easily. Use <code>text-shadow</code> with caution, however, as they are two separate elements. We have had the best luck applying <code>text-shadow</code> to the minute element, or the <code>&lt;span&gt; &lt;span&gt;</code>.</li> 
+                    <li>jQuery code does not work in IE8.</li>
+                    <li>Javascript for IE7 support does not work (and jQuery 1.4.2 throws an error that IE7 does not move past). If anyone can fix, please let me know. </li>
+                </ul>
+                
+                <hr>
+                
+                <h2>Show us what you&rsquo;ve got!</h2>
+                <p><a href="j@projectevolution.com">Send us links to the icon font in use</a>, and happy coding.</p>
+                
+            </article>
+        </section>
+    	
+    	
+    	<footer>
+    		<p>Open source coolness from <a href="http://www.projectevolution.com" title="Python and Django developers in Providence, RI">Project Evolution</a> &copy;2012</p>
+    	</footer>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<script src="pe-analogclock.js"></script>
+	<!--[if lte IE 7]>
+	<script src="pe-analogclock-oldie.js"></script>
+	<![endif]-->
+</body>
+</html>
