@@ -16,14 +16,12 @@ The CSS uses <code>:before</code> pseudo elements to place the icons, therefore,
 <li>Single digit hour values: <code>hour-01</code> as well as <code>hour-1</code></li>
 </ul>
 
-<hr>
 
 <h2>Sample</h2>
 Since GitHub readme does not support @font-face, here is a sample image of what the icon font looks like with very little CSS applied to it:
 
-<img src="sample.png" alt="Sample of the PE Clock font in action">
+<img src="https://raw.github.com/proevo/PE-Analog-Clock-icon-font/master/sample.png" alt="Sample of the PE Clock font in action">
 
-<hr>
 
 <h2>How it Works</h2>
 
@@ -31,7 +29,6 @@ The font file contains glyphs for hours and minutes. The glyphs for the hours co
 
 The <code>&lt;span&gt;</code> for the minute hand is nested inside of the hour. The hour has <code>position: relative</code> while the minute has <code>position: absolute</code>. In this way, they can overlap each other to create a clock face and represent many different combinations of hour and minute. 
 
-<hr>
 
 <h2>Browser Support</h2>
 Browsers need to support <code>@font-face</code> as well as <code>:before</code> pseudo-elements. This font and CSS has been tested in:
@@ -63,7 +60,6 @@ Browsers need to support <code>@font-face</code> as well as <code>:before</code>
 <li>Android 4.0.3 and above on most devices</li>
 </ul>
 
-<hr>
 
 <h2>Show us what you&rsquo;ve got!</h2>
 <a href="j@projectevolution.com">Send us links to the icon font in use</a>, and happy coding.
