@@ -71,9 +71,10 @@ Browsers need to support <code>@font-face</code> as well as <code>:before</code>
 Open source coolness from <a href="http://www.projectevolution.com" title="Python and Django developers in Providence, RI">Project Evolution</a> &copy;2012
 
 <h3>Thanks to:</h3>
-James Re at Project Evolution for jQuery inspiration
-JSfiddle.net
-Ray Schamp and Peter Landry for technical support
+J. Hogue at Project Evolution for clock face design and concept<br>
+James Re at Project Evolution for jQuery inspiration<br>
+JSfiddle.net<br>
+Ray Schamp and Peter Landry for technical support<br>
 Keyamoon for the IcoMoon service (<a href="http://iconmoon.io">icomoon.io</a>)
 
 <hr>
