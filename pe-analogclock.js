@@ -1,41 +1,29 @@
 /*
  * Cycle through the pages <time> elements, parse out the datetime attribute, and insert the proper <span> elements with jQuery
  */
+
 $(document).ready(function() {
     
+    // for our sample we only apply it to the #test-js div. 
+    //Remove this and the closing notation if you want it applied across the entire page
     $('#test-js time').each(function() {
     
-        //if( $(this).hasAttribute("datetime") ) {
-        // datetime="2012-03-15 11:32:00"
+        var attr = $(this).attr('datetime');
         
-            var time = $(this).attr("datetime"); 
-            var date = new Date( time ); 
-            var hour = date.getHours();
-            var minute = date.getMinutes();
-            
-            console.log( date ); 
+        if( typeof attr !== 'undefined' && attr !== false ) {
+    
+            var datetimeParts = $(this).attr("datetime").split(" ");
+            var timeParts = datetimeParts[1]; 
+            var time = timeParts.split(":");     
+            var hour = time[0]; 
+            var minute = time[1];     
             
             $(this).prepend( '<span class="hour-' + hour + '"><span class="minute-' + minute + '"></span></span> ' ); 
-        //}
-    }); 
+        }
+    }); // Remove this if you remove line 9 above. 
 }); 
 
 
 /*
- * Cycle through the pages <time> elements, parse out the datetime attribute, and insert the proper <span> elements
- * All without jQuery! 
- 
-
-document.addEventListener("DOMContentLoaded", function() {
-    
-    for ( var time = document.getElementsByTagName("time"), l = time.length, i = 0; i < l && (r[i].style.border = 'solid 1px red') == 'solid 1px red'; ++i);
-}
-var time = document.getElementsByTagName("time")[0].attributes[0].value;
-document.write(time);
-date = new Date(time);
-document.write('<br>');
-document.write(date.getHours());
-document.write('<br>');
-document.write(date.getMinutes());
-
-*/
+ * Wishlist: An optional way to do this with vanilla JS and without the jQuery library (or any library). 
+ */
