@@ -10,7 +10,7 @@
 window.onload = function() {
 	function addIcon(el, entity) {
 		var html = el.innerHTML;
-		el.innerHTML = '<span style="font-family: \'pe-analogtime\'">' + entity + '</span>' + html;
+		el.innerHTML = '<span style="font-family: \'pe-analogclock\'">' + entity + '</span>' + html;
 	}
 	var icons = {
 			'.minute-00' : '&#x21;', 
@@ -89,17 +89,22 @@ window.onload = function() {
 			'hour-11' : '&#x30;'
 		},
 		els = document.getElementsByTagName('*'),
-		i, attr, html, c, el;
+		i, attr, html, h, m, el;
 	for (i = 0; i < els.length; i += 1) {
 		el = els[i];
 		attr = el.getAttribute('data-icon');
 		if (attr) {
 			addIcon(el, attr);
 		}
-		c = el.className;
-		c = c.match(/icon-[^\s'"]+/);
-		if (c) {
-			addIcon(el, icons[c[0]]);
+		h = el.className;
+		h = h.match(/hour-[^\s'"]+/);
+		if (h) {
+			addIcon(el, icons[h[0]]);
+		}
+		m = el.className;
+		m = m.match(/minute-[^\s'"]+/);
+		if (m) {
+			addIcon(el, icons[m[0]]);
 		}
 	}
 };
