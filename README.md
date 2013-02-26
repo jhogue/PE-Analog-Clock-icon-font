@@ -75,7 +75,7 @@ J. Hogue at Project Evolution for clock face design and concept<br>
 James Re at Project Evolution for jQuery inspiration<br>
 JSfiddle.net<br>
 Ray Schamp and Peter Landry for technical support<br>
-Keyamoon for the IcoMoon service (<a href="http://iconmoon.io">icomoon.io</a>)
+Keyamoon for the IcoMoon service (<a href="http://icomoon.io">icomoon.io</a>)
 
 <hr>
 
