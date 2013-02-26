@@ -64,7 +64,7 @@ Browsers need to support <code>@font-face</code> as well as <code>:before</code>
 
 
 <h2>Show us what you&rsquo;ve got!</h2>
-<a href="j@projectevolution.com">Send us links to the icon font in use</a>, and happy coding.
+<a href="mailto:j@projectevolution.com">Send us links to the icon font in use</a>, and happy coding.
 
 
 <h2>Credits and License</h2>
