@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-<title>Project Evolution Analog Clock Icon Font</title>
-<link rel="stylesheet" href="pe-analogclock.css" />
+<title>Analog Clock Icon Font</title>
+<link rel="stylesheet" href="analogclock.css" />
 <style>
 	section, header, article, footer { display: block; }
 	body {
@@ -97,11 +97,11 @@
 	<div class="w-main centered">
     	<section class="mtm clearfix" id="glyphs">
         	<header>
-        		<h1>Project Evolution Analog Clock Icon Font</h1>
+        		<h1>Analog Clock Icon Font</h1>
         	</header>
         	
         	<article>
-            	<p>The Analog Clock icon set allows <code>&lt;time&gt;</code> elements to have a visual notation in a simple, progressive way using a @font-face to deliver a custom font for the clock face. The icon is therefore scalable and can be styled with CSS to match most site designs. </p>
+            	<p>The Analog Clock icon set allows <code>&lt;time&gt;</code> elements to have a visual notation in a simple, progressive way using a <code>@font-face</code> to deliver a custom font for the clock face. The icon is therefore scalable and can be styled with CSS to match most site designs. </p>
         		<p>The required HTML can be implemented server-side in any application to output the desired icons. Optionally, for users that do not have server-side access, a jQuery plug-in can sniff out <code>&lt;time&gt;</code> elements and add the HTML necessary for the icon set. Both options are documented here and can be modified to fit specific situations. </p>
         		<p>The CSS uses <code>:before</code> pseudo elements to place the icons, therefore, there is no extraneous HTML content present when the <code>:before</code> element is not supported. Graceful fallback to the contents of the <code>&lt;time&gt;</code> element.</p>
         		<p><strong>Supports:</strong></p>
@@ -314,7 +314,7 @@
                     </ul>
                 </div>
                 <div class="half">
-                    <h3>Mac browsers (Snow Leopard)</h3>
+                    <h3>Mac browsers</h3>
                     <ul>
                         <li>Firefox 3.6 and above</li>
                         <li>Safari 4.0 and above</li>
@@ -364,7 +364,7 @@
 &lt;/time&gt;</code>
                 </pre>
                 
-                <p>Of course, you'd want to apply <code class="php">date()</code> to a variable representing the current element&rsquo;s timestamp, but you get the idea.</p>
+                <p>Of course, you&rsquo;d want to apply <code class="php">date()</code> to a variable representing the current element&rsquo;s timestamp, but you get the idea.</p>
                 
                 <hr>
                 
@@ -396,7 +396,7 @@
                 <h2>Known issues</h2>
                 <ul>
                     <li>Because the minute hand and hour hands are separate elements, absolute positioning is needed. Alignment of the hands is best controlled by adjusting the line-height. Our CSS includes a line-height that we have seen work well across browsers, but your stylesheet may require some adjustment to our supplied line-height values for proper alignment. </li>
-                    <li>The icons are font-characters, so CSS rules can style the elements easily. Use <code>text-shadow</code> with caution, however, as they are two separate elements. We have had the best luck applying <code>text-shadow</code> to the minute element, or the <code>&lt;span&gt; &lt;span&gt;</code>.</li> 
+                    <li>The icons are font-characters, so CSS rules can style the elements easily. Use <code>text-shadow</code> with caution, however, as they are two separate elements. We have had the best luck applying <code>text-shadow</code> to the minute element, or the <code>span > span</code>.</li> 
                     <li>jQuery code does not work in IE8.</li>
                     <li>Javascript for IE7 support does not work (and jQuery 1.4.2 throws an error that IE7 does not move past). If anyone can fix, please let me know. </li>
                 </ul>
@@ -404,21 +404,21 @@
                 <hr>
                 
                 <h2>Show us what you&rsquo;ve got!</h2>
-                <p><a href="j@projectevolution.com">Send us links to the icon font in use</a>, and happy coding.</p>
+                <p><a href="highchairdesignhaus@gmail.com">Send me a link to the icon font in use</a>, and happy coding.</p>
                 
             </article>
         </section>
     	
     	
     	<footer>
-    		<p>Open source coolness from <a href="http://www.projectevolution.com" title="Python and Django developers in Providence, RI">Project Evolution</a> &copy;2012</p>
+    		<p>Open source coolness from <a href="http://www.highchairdesign.com" title="Web design and development in Providence, RI">Highchair designahus</a> &copy;2012&ndash;2016</p>
     	</footer>
 	</div>
 	
 	<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-	<script src="pe-analogclock.js"></script>
+	<script src="analogclock.js"></script>
 	<!--[if lte IE 7]>
-	<script src="pe-analogclock-oldie.js"></script>
+	<script src="analogclock-oldie.js"></script>
 	<![endif]-->
 </body>
 </html>

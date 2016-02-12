@@ -1,4 +1,4 @@
-PE-Analog-Clock-icon-font
+Analog-Clock-icon-font
 =========================
 
 A set of icons for displaying a visual ("analog") representation of time stamps. 
@@ -64,23 +64,23 @@ Browsers need to support <code>@font-face</code> as well as <code>:before</code>
 
 
 <h2>Show us what you&rsquo;ve got!</h2>
-<a href="mailto:j@projectevolution.com">Send us links to the icon font in use</a>, and happy coding.
+<a href="mailto:highchairdesignhaus@gmail.com">Send me a link to the icon font in use</a>, and happy coding.
 
 
 <h2>Credits and License</h2>
-Open source coolness from <a href="http://www.projectevolution.com" title="Python and Django developers in Providence, RI">Project Evolution</a> &copy;2012
+Open source coolness from <a href="http://www.highchairdesign.com" title="Web design and development in Providence, RI">Highchair designahus</a> &copy;2012&ndash;2016
 
 <h3>Thanks to:</h3>
-J. Hogue at Project Evolution for clock face design and concept<br>
-James Re at Project Evolution for jQuery inspiration<br>
+J. Hogue (me!) for clock face design and concept<br>
+<a href="//github.com/itsjamesre">James Re</a> for jQuery inspiration<br>
 JSfiddle.net<br>
-Ray Schamp and Peter Landry for technical support<br>
-Keyamoon for the IcoMoon service (<a href="http://icomoon.io">icomoon.io</a>)
+<a href="//github.com/rschamp">Ray Schamp</a> and <a href="//github.com/peterlandry">Peter Landry</a> for technical support<br>
+Keyamoon for the <a href="http://icomoon.io">IcoMoon.io</a> service
 
 <hr>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
 <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />
-<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">PE Analog Clock icon font</span> 
-by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.projectevolution.com" property="cc:attributionName" rel="cc:attributionURL">Project Evolution</a> 
+<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Analog Clock icon font</span> 
+by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.highchairdesign.com" property="cc:attributionName" rel="cc:attributionURL">Highchair designhaus</a> 
 is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
